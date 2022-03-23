@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nik Goetzke</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rgb.css">
+    <link rel="stylesheet" href="hover.css">
+    <script src="https://kit.fontawesome.com/e54541c7e7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <body>
         <div class="scroll-wrapper">
             <header class="header">
                 <nav>
+                    <!-- Reminder: create a fixed nav bar -->
+                    <div class="logo"><a class="directory"><span>N.G.</span></a></div>
                     <a class="directory" href="#about"><span>About</span></a>
                     <a class="directory" href="#work"> <span>Work</span></a>
                     <a class="directory" href="#contact"> <span>Contact</span></a>
+                    <span class="directory icon" style="color: white">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </span>
                 </nav>
     
                 <div class="title">
@@ -33,12 +41,17 @@
                     <section>
                         <h2 id="about">About</h2>
                         <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam aliquid at nesciunt expedita architecto, id voluptates laboriosam tempora dicta iusto repudiandae hic. Asperiores quia commodi exercitationem ipsum corporis mollitia?</p>
-                        <p>Working at <a href=#>Lorem</a>. Based in Austin, TX</p>
+                        <p class="about-me">Working at <a href=#>Lorem</a>. Based in Austin, TX</p>
                     </section>
                     <section>
                         <h2 id="work">Work</h2>
                         <div class="portfolio">
                             <article class="project">
+                                <a href=#>
+                                    <figure class="image" role="presentation">
+                                        <img src=imgs\project-placeholder.png role="presentation">
+                                    </figure>
+                                </a>
                                 <div class="project-card">
                                     <h3 class="project-name">Project Name
                                         <div class="project-details">Tools Used, Date e.g. React/SASS (June/2021)</div>
@@ -49,11 +62,6 @@
                                         <a class="button" href=#>Read the article</a>
                                     </div>
                                 </div>
-                                <a href=#>
-                                    <figure class="image" role="presentation">
-                                        <img src=imgs\project-placeholder.png role="presentation">
-                                    </figure>
-                                </a>
                             </article>
                             <!-- <article class="project">
                                 <div class="project-card">
@@ -110,7 +118,7 @@
                         </div>
                     </section>
                     <footer>
-                        <div>
+                        <div class="footer-wrapper">
                             <h2 id="contact">Contact</h2>
                             <div class="contact-wrapper">
                                 <div>You can email me at</div>
@@ -131,7 +139,7 @@
                     </footer>
                 </div>
             </main>
-            <div class="footer-div-2"></div>
+            
         </div>
     </body>
 </body>

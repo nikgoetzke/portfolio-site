@@ -1,0 +1,68 @@
+.emboss-name {
+  position: relative;
+  font-size: 60px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  text-shadow: 0px 0px 1px gray, 0px 1px 1px gray, 0px 2px 1px gray,
+    1px 1px 1px gray, 1px 2px 1px gray, 1px 3px 1px gray, 2px 2px 1px gray,
+    2px 3px 1px gray, 2px 4px 1px gray, /* soften */ 1px 10px 30px black,
+    1px 10px 70px black, 0px 5px 5px black, /* left */ -5px 5px 20px black,
+    /* right */ 5px 5px 20px black, /* glow */ 1px 1px 120px white;
+}
+
+.emboss-subtitle {
+  position: relative;
+  font-size: 60px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  text-shadow: 0px 0px 1px gray, 0px 1px 1px gray, 0px 2px 1px gray,
+    1px 1px 1px gray, 1px 2px 1px gray, 1px 3px 1px gray, 2px 2px 1px gray,
+    2px 3px 1px gray, 2px 4px 1px gray, /* soften */ 1px 10px 30px black,
+    1px 10px 70px black, 0px 5px 5px black, /* left */ -5px 5px 20px black,
+    /* right */ 5px 5px 20px black, /* glow */ 1px 1px 120px white;
+}
+.emboss-name::after {
+  content: "Nikolas Goetzke";
+  /* content: "Aspiring Web Developer"; */
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-family: Roboto, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-shadow: 0px 0px 100px rgba(11, 124, 199, 0.5);
+  animation: cycle linear 10s infinite;
+}
+
+.emboss-subtitle::after {
+  content: "Aspiring Web Developer";
+  /* content: "Aspiring Web Developer"; */
+  font-size: 60px;
+  letter-spacing: 5px;
+  font-family: Roboto, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-shadow: 0px 0px 100px rgba(11, 124, 199);
+  animation: cycle linear 10s infinite;
+}
+
+@keyframes cycle {
+  0% {
+    text-shadow: 0px 0px 100px rgb(11, 124, 199);
+  }
+  20% {
+    text-shadow: 0px 0px 100px rgb(199, 11, 183);
+  }
+  40% {
+    text-shadow: 0px 0px 100px rgb(42, 199, 11);
+  }
+  60% {
+    text-shadow: 0px 0px 100px rgb(199, 11, 11);
+  }
+  80% {
+    text-shadow: 0px 0px 100px rgb(199, 171, 11);
+  }
+}
