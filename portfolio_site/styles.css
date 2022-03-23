@@ -13,10 +13,10 @@ body {
   transition: background 0.2s linear;
 }
 
-body .dark {
+/* body .dark {
   background-color: white;
   color: black;
-}
+} */
 
 section {
   padding-bottom: 50px;
@@ -48,7 +48,7 @@ nav {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  background-color: black;
+  background-color: #282e35;
 }
 nav :nth-child(1) {
   margin-right: auto;
@@ -65,7 +65,6 @@ h2 {
   line-height: 1;
   margin: 0;
   padding-top: 30px;
-  margin-bottom: 30px;
 }
 
 h2::after {
@@ -78,7 +77,7 @@ h2::after {
   transform: scale(0.8, 0.8);
 }
 h3 {
-  margin: 0;
+  margin-top: 20px;
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 30px;
@@ -94,6 +93,10 @@ img {
   height: 100%;
 }
 
+a{
+  color: white;
+}
+
 .directory {
   color: rgb(255, 255, 255);
   font-family: Roboto, sans-serif;
@@ -104,7 +107,7 @@ img {
 }
 
 .logo {
-  background-color: #3D4752;
+  background-color: #000;
   border-radius: 50%;
   width: 50px;
   display: flex;
@@ -137,7 +140,15 @@ img {
 
 .about-me {
   margin: 0 50px 0 50px;
+  /* text-indent: 25px; */
+  text-align: center;
 }
+
+.about-me-status {
+  margin: 20px 50px 0 50px;
+  text-align: center;
+}
+
 .portfolio {
   list-style-type: none;
   margin: 0;
@@ -189,10 +200,11 @@ img {
 
 .button {
   display: inline-block;
-  background: rgb(53, 20, 201);
+  background: #000;
   font-size: 0.85em;
   padding: 10px 20px;
   margin-bottom: 0.5em;
+  border-radius: 25px;
   color: white;
   font-family: Roboto, sans-serif;
   text-decoration: none;
@@ -200,20 +212,6 @@ img {
   box-shadow: 3px 7px 20px rgba(117, 81, 125, 0.2);
   transition: background 120ms, color 120ms, transform 20ms;
 }
-
-/* .button:first-child {
-  margin-right: 10px;
-}
-.project:nth-child(odd) .j {
-  left: 50%;
-  text-align: left;
-  padding-right: 0;
-  padding-left: 25px;
-}
-.project:nth-child(odd) .image {
-  left: -50%;
-  margin-left: -85px;
-} */
 
 .email {
   text-align: center;
@@ -271,35 +269,5 @@ img {
     font-size: 18px;
     margin: 10px 0 25px 0;
   }
-  /* .project:nth-child(n) {
-    position: relative;
-    padding-top: 340px;
-    margin-bottom: 100px;
-    padding-top: 260px;
-    margin-bottom: 60px;
-  }
-  .project:nth-child(n):last-child {
-    margin-bottom: 20px;
-  }
-  .project:nth-child(n) .j,
-  .project:nth-child(n) .image {
-    display: block;
-    margin: 0;
-    left: auto;
-    right: auto;
-    padding: 0;
-  }
-  .project:nth-child(n) .j {
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-  }
-  .project:nth-child(n) .image {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 300px;
-    margin-left: -156px;
-    height: 225px;
-  } */
+  
 }

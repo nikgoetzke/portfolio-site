@@ -23,29 +23,19 @@
   background: #ff7b00;
   color: white;
 }
-.button:active {
-  background: #54fad4;
-  color: #1b2947;
-  transition: none;
-}
 
 .hover-effect {
   font-family: Roboto, sans-serif;
   text-decoration: none;
   line-height: 2;
   color: #ff7b00;
-  background: linear-gradient(
-    180deg,
-    transparent 94%,
-    rgb(53, 20, 201) 94%,
-    rgb(53, 20, 201) 100%
-  );
+  background: linear-gradient(180deg, transparent 94%, #ff7b00, #ff7b00);
   background-repeat: repeat-x;
   background-position: 0 10px;
   transition: background-position 80ms ease-in, color 80ms;
 }
 .hover-effect strong {
-  color: rgb(53, 20, 201);
+  color: #ff7b00;
   transition: color 80ms;
 }
 .hover-effect:hover strong {
