@@ -1,0 +1,277 @@
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #333;
+  --box-shadow: #333;
+  --tertiary-color: #555;
+  --bg-color: #4ca2fd;
+  --white: #fff;
+}
+
+
+:after,
+:before {
+  border-color: var(--color-gray-200);
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--primary-color);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+hr {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  /* box-shadow: 0px 2px 4px var(--box-shadow); */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: var(--white);
+  position: relative;
+}
+
+.navbar-brand:after {
+  bottom: -2px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+  width: 100%;
+}
+
+.navbar-brand:hover:after {
+  background-color: currentColor;
+  transform: scaleX(1);
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.navbar a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.dark-mode {
+  --primary-color: #333;
+  --secondary-color: #fff;
+  --tertiary-color: #ddd;
+  --bg-color: #444;
+}
+
+.dark-mode-toggle>i {
+  color: rgba(255, 255, 255, .5);
+}
+
+/* The button toggle for dark mode uses JavaScript to toggle the dark-mode class on the :root element. The CSS uses the var function to define the theme colors, and the .dark-mode class changes the value of these variables to create the dark mode theme. */
+
+#navbar {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+#dark-mode-toggle {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, .1);
+  ;
+  border-radius: .25rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+#dark-mode-toggle:hover {
+  border: 1px solid white;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  background-color: var(--bg-color);
+}
+
+.social-proof {
+  padding: 4rem 2rem;
+  background-color: var(--primary-color);
+}
+
+.social-proof h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.social-proof p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Portfolio section */
+
+.portfolio {
+  padding: 4rem 2rem;
+  background-color: var(--bg-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+}
+
+.portfolio p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-example h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-example p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.portfolio-item {
+  width: calc(33.33% - 20px);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px var(--secondary-color),
+    0 6px 6px var(--secondary-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio-example img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.portfolio-example h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+}
+
+.portfolio-example .btn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 20px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.portfolio-item h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.portfolio-item p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-item .btn {
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--bg-color);
+  background-color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+  margin-right: 1rem;
+}
+
+.portfolio-item .btn:hover {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 2rem;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer ul li a {
+  color: var(--white);
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+.footer p {
+  font-size: 1.2rem;
+}
+
+.footer .copyright {
+  font-size: 1.2rem;
+}
+
+#learn-more-btn {
+  border-radius: 50px;
+}
