@@ -1,9 +1,8 @@
 :root {
-  --primary-color: #007BFF;
+  --bg-color: #fff;
   --secondary-color: #333;
   --box-shadow: #333;
   --tertiary-color: #555;
-  --bg-color: #4ca2fd;
   --white: #fff;
 }
 
@@ -28,25 +27,19 @@ h3 {
   color: var(--secondary-color);
 }
 
-hr {
-  position: absolute;
-  left: 5%;
-  width: 90%;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   /* box-shadow: 0px 2px 4px var(--box-shadow); */
 }
 
 .navbar-brand {
   font-size: 1.5rem;
-  color: var(--white);
   position: relative;
+  color: var(--secondary-color) !important;
 }
 
 .navbar-brand:after {
@@ -68,6 +61,11 @@ hr {
 
 .nav-item {
   text-align: center;
+
+}
+
+.nav-link {
+  color: var(--secondary-color) !important;
 }
 
 .navbar a {
@@ -76,51 +74,26 @@ hr {
   margin-right: 1rem;
 }
 
-.dark-mode {
-  --primary-color: #333;
-  --secondary-color: #fff;
-  --tertiary-color: #ddd;
-  --bg-color: #444;
+.custom-navbar-toggler-icon i {
+  color: var(--secondary-color);
+  padding: 0;
 }
 
-.dark-mode-toggle>i {
-  color: rgba(255, 255, 255, .5);
+
+.hero-text {
+  color: var(--secondary-color);
+}
+
+.dark-mode {
+  --primary-color: #014083;
+  --secondary-color: #fff;
+  --tertiary-color: #ddd;
+  --bg-color: #014083;
 }
 
 /* The button toggle for dark mode uses JavaScript to toggle the dark-mode class on the :root element. The CSS uses the var function to define the theme colors, and the .dark-mode class changes the value of these variables to create the dark mode theme. */
 
-#navbar {
-  background-color: var(--bg-color);
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-}
 
-#navbar ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#navbar a {
-  color: var(--primary-color);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-#dark-mode-toggle {
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, .1);
-  ;
-  border-radius: .25rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-}
-
-#dark-mode-toggle:hover {
-  border: 1px solid white;
-}
 
 .hero {
   padding: 4rem 2rem;
@@ -129,10 +102,12 @@ hr {
 
 .social-proof {
   padding: 4rem 2rem;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
 }
 
-.social-proof h2 {
+.social-proof h2,
+.social-proof h5 {
+  color: var(--secondary-color);
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
@@ -149,16 +124,16 @@ hr {
 .portfolio {
   padding: 4rem 2rem;
   background-color: var(--bg-color);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio h2 {
   font-size: 2.5rem;
 }
 
-.portfolio p {
+.portfolio h2+p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--secondary-color);
 }
 
 .portfolio-example h3 {
@@ -168,7 +143,6 @@ hr {
 
 .portfolio-example p {
   font-size: 1.2rem;
-  color: var(--secondary-color);
   line-height: 1.5;
   margin-bottom: 2rem;
 }
@@ -191,7 +165,7 @@ hr {
   margin-bottom: 1rem;
 }
 
-.portfolio-example h3 {
+.portfolio-example h5 {
   font-size: 24px;
   font-weight: 500;
   margin: 20px 0 10px 0;
@@ -246,7 +220,7 @@ hr {
 }
 
 .footer {
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
   padding: 2rem;
 }
 
@@ -258,7 +232,7 @@ hr {
 }
 
 .footer ul li a {
-  color: var(--white);
+  color: var(--secondary-color);
   font-size: 1.2rem;
   text-decoration: none;
   margin-right: 1.5rem;
@@ -266,6 +240,7 @@ hr {
 
 .footer p {
   font-size: 1.2rem;
+  color: var(--secondary-color);
 }
 
 .footer .copyright {
@@ -274,4 +249,46 @@ hr {
 
 #learn-more-btn {
   border-radius: 50px;
+}
+
+#navbar {
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+#navbar-toggler {
+  color: var(--secondary-color) !important;
+  border: 2px solid var(--secondary-color);
+  border-radius: .25rem;
+  outline: none;
+  width: 48px;
+  height: 44px;
+}
+
+
+#dark-mode-toggle {
+  background-color: transparent;
+  border-radius: .25rem;
+  cursor: pointer;
+  width: 48px;
+  height: 44px;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  outline: none;
+  box-sizing: border-box;
 }
