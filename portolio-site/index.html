@@ -22,28 +22,30 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand text-white h1" href="#">Nik Goetzke</a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand h1" href="#">Nik Goetzke</a>
     <div class="navbar-container-right">
       <button class="dark-mode-toggle rounded mr-2" id="dark-mode-toggle"><i class="fa-solid fa-moon"></i></button>
       <button class="navbar-toggler" type="button" id="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="custom-navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
       </button>
     </div>
     <div class=" collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link text-white" href="#">Blog<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Work<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Work<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">About<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Contact<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
         </li>
       </ul>
 
@@ -52,15 +54,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h1 class="hero-title mb-4 text-white">Welcome, I'm Nik Goetzke.</h1>
-          <p class="hero-text mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <h1 class="hero-title mb-4">Welcome, I'm Nik Goetzke.</h1>
+          <p class="hero-text mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Quisque
             auctor tellus
             euismod commodo malesuada. Nam blandit libero non libero placerat, et efficitur mi rhoncus.</p>
           <a href="#" class="btn btn-danger btn-lg text-light mb-4" id="learn-more-btn">Learn More</a>
         </div>
         <div class="col-lg-6">
-          <img src="imgs\hero-image-edit(1).png" alt="Hero illustration">
+          <img src="imgs\hero-image-edit(1).png" alt="Hero illustration" class="img-fluid">
         </div>
       </div>
     </div>
@@ -70,8 +72,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h2 class="mb-3 text-white">See what our clients are saying</h2>
-          <p class="text-white">
+          <h2 class="mb-3">See what our clients are saying</h2>
+          <p>
             Our web design business has helped numerous clients achieve their online goals. Read what they have to say
             about working with us:
           </p>
@@ -79,8 +81,8 @@
             <li class="media mb-3">
               <img src="/imgs/icons8-geometric-flowers-100.png" class="mr-3" alt="Client 1">
               <div class="media-body">
-                <h5 class="mt-0 mb-1 text-white">Client 1</h5>
-                <p class="text-white">
+                <h5 class="mt-0 mb-1">Client 1</h5>
+                <p>
                   "Working with the team at the web design business was an absolute pleasure. They listened to our needs
                   and delivered a website that exceeded our expectations. We highly recommend them to anyone looking for
                   a top-notch web design experience."
@@ -90,8 +92,8 @@
             <li class="media mb-3">
               <img src="/imgs/icons8-geometric-flowers-100.png" class="mr-3" alt="Client 2">
               <div class="media-body">
-                <h5 class="mt-0 mb-1 text-white">Client 2</h5>
-                <p class="text-white">
+                <h5 class="mt-0 mb-1">Client 2</h5>
+                <p>
                   "The web design business was a game changer for our business. Their expertise and attention to detail
                   helped us create a website that accurately represents our brand and has helped us attract new
                   customers."
@@ -110,8 +112,8 @@
   <!-- Portfolio Section -->
   <section class="portfolio">
     <div class="container">
-      <h2 class="text-center text-white">Our Portfolio</h2>
-      <p class="text-center text-white">Check out some of our recent work:</p>
+      <h2 class="text-center">Our Portfolio</h2>
+      <p class="text-center">Check out some of our recent work:</p>
       <div class="row">
         <div class="col-lg-4 col-md-6 portfolio-example">
           <div class="card  mb-4">
@@ -165,8 +167,8 @@
         </div>
       </div>
     </div>
-  </section>
 
+  </section>
   <footer class="py-3 footer">
     <div class="container">
       <div class="d-flex justify-content-between">
@@ -203,7 +205,7 @@
           </ul>
         </div>
       </div>
-      <div class="text-center text-white my-3">
+      <div class="text-center my-3">
         <p>&copy; 2023 CarpeFutura. All rights reserved.</p>
       </div>
     </div>
