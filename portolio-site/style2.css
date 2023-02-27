@@ -1,9 +1,8 @@
 :root {
   --bg-color: #fff;
   --secondary-color: #333;
-  --box-shadow: #333;
-  --tertiary-color: #555;
-  --white: #fff;
+  --dark: #000;
+  --light: #fff;
 }
 
 
@@ -16,15 +15,22 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif !important;
   background-color: var(--primary-color);
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
+  font-family: "Pacifico", sans-serif;
   font-weight: 600;
   color: var(--secondary-color);
+}
+
+.lg-font {
+  font-size: 1.2rem !important;
 }
 
 .navbar {
@@ -33,7 +39,7 @@ h3 {
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--bg-color);
-  /* box-shadow: 0px 2px 4px var(--box-shadow); */
+  border-bottom: 1px solid #b8c4c2;
 }
 
 .navbar-brand {
@@ -87,7 +93,8 @@ h3 {
 .dark-mode {
   --primary-color: #014083;
   --secondary-color: #fff;
-  --tertiary-color: #ddd;
+  --dark: #fff;
+  --light: #000;
   --bg-color: #014083;
 }
 
@@ -113,7 +120,6 @@ h3 {
 }
 
 .social-proof p {
-  font-size: 1.2rem;
   color: var(--secondary-color);
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -168,7 +174,7 @@ h3 {
 .portfolio-example h5 {
   font-size: 24px;
   font-weight: 500;
-  margin: 20px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .portfolio-example .btn {
@@ -222,6 +228,8 @@ h3 {
 .footer {
   background-color: var(--bg-color);
   padding: 2rem;
+  border-top: 1px solid #b8bfc4;
+  ;
 }
 
 .footer ul {
@@ -247,8 +255,28 @@ h3 {
   font-size: 1.2rem;
 }
 
-#learn-more-btn {
+#btn-primary {
+  border: 1px solid var(--dark);
   border-radius: 50px;
+  background-color: #8AB7FF;
+  transition: border-radius, 0.2s, linear;
+  color: var(--dark);
+}
+
+#btn-primary:hover {
+  border-radius: 15px;
+}
+
+#btn-secondary {
+  border: 1px solid var(--dark);
+  border-radius: 50px;
+  background-color: #B0B6BA;
+  transition: border-radius, 0.2s, linear;
+  color: var(--dark);
+}
+
+#btn-secondary:hover {
+  border-radius: 15px;
 }
 
 #navbar {
