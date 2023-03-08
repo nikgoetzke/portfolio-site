@@ -108,7 +108,7 @@ h5 {
 }
 
 .social-proof {
-  padding: 4rem 2rem;
+  padding: 0 2rem;
   background-color: var(--bg-color);
 }
 
@@ -128,7 +128,7 @@ h5 {
 /* Portfolio section */
 
 .portfolio {
-  padding: 4rem 2rem;
+  padding: 0 2rem;
   background-color: var(--bg-color);
 }
 
